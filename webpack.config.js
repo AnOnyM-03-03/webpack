@@ -3,10 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
 
 module.exports = {
+    context: path.resolve(__dirname, 'src'),
    mode: 'development',
    entry: {
-      main: './src/index.js',
-      analytics: './src/analytics.js',
+      main: './index.js',
+      analytics: './analytics.js',
    },
    output: {
       filename: '[name].bundle.js',
@@ -14,8 +15,8 @@ module.exports = {
    },
    plugins: [
       new HtmlWebpackPlugin({
-         template: './src/index.html', 
-      }),git remote add origin https://github.com/AnOnyM-03-03/webpack.git
+         template: './index.html', 
+      }),
       new CleanWebpackPlugin(),
    ],
 };
