@@ -15,7 +15,7 @@ module.exports = {
    plugins: [
       new HtmlWebpackPlugin({
          template: './src/index.html', 
-      }),git remote add origin https://github.com/AnOnyM-03-03/webpack.git
+      }),
       new CleanWebpackPlugin(),
    ],
 };
