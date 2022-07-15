@@ -1,9 +1,8 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin'); //для создания html файла
-const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // для удаления файлов при изменении их
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
 
 module.exports = {
-   context: 'src',
    mode: 'development',
    entry: {
       main: './src/index.js',
@@ -15,8 +14,8 @@ module.exports = {
    },
    plugins: [
       new HtmlWebpackPlugin({
-         template: './src/index.html', //откуда взять страницу для отображения
-      }),
+         template: './src/index.html', 
+      }),git remote add origin https://github.com/AnOnyM-03-03/webpack.git
       new CleanWebpackPlugin(),
    ],
 };
