@@ -13,6 +13,12 @@ module.exports = {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
    },
+   resolve:{
+    extensions: ['.js','.jpg','.css'],
+    alias:{
+        '@': path.resolve(__dirname, 'src')
+    }
+   },
    plugins: [
       new HtmlWebpackPlugin({
          template: './index.html',
